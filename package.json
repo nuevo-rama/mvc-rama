@@ -1,0 +1,23 @@
+{
+  "name": "mvc-rama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nuevo-rama/mvc-rama.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nuevo-rama/mvc-rama/issues"
+  },
+  "homepage": "https://github.com/nuevo-rama/mvc-rama#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
