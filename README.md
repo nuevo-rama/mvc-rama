@@ -1,6 +1,8 @@
 # MVC Modelo Vista Controlador
 ---------
 ### Proyecto basado en la arquitectura MVC (Modelo - Vista - Controlador)
+
+#### Node / Express / EJS
 ---------
 
 1. Crear el repositorio
@@ -26,3 +28,36 @@
 - Confirgurar el servidor
 
 7. Crear la estructura de carpetas
+
+------
+## Vistas
+
+1. Instalar ejs
+
+`npm i ejs`
+
+2. Configurar EJS como el template engine en app.js
+
+`app.set("view engine", "ejs")`
+
+3. Configurar el acceso a la carpeta de recursos estáticos
+
+`app.use (express.static(publicPath));`
+
+4. Renderizar utilizando res.render en el mainController
+
+`res.render("index");`
+
+--------------------
+
+## Controladores
+
+
+
+
+
+
+
+
+
+
