@@ -1,25 +1,32 @@
-//Requerimos Express
 const express = require ("express");
+const app = express ();
+//Resuelve rutas
+const path = require ("path"); 
+//Para que pueda resolver siempre la ruta a public
+const publicPath = path.resolve(__dirname, "./public"); 
 
-//Invocamos la función
-const app = express(); //En la constante app tendremos disponibles todos los métodos del framework
-
-const path = require ("path"); //resuelve rutas
-const publicPath = path.resolve(__dirname, "./public"); //para que pueda resolver siempre la ruta a public
 
 //Para poder usar los  recursos estaticos de la carpeta public
 app.use (express.static(publicPath)); 
 
 
-//Configuramos el servidor
-app.listen (3000, () => {           
-    console.log ("Servidor funcionando correctamente en el Puerto 3000");
-});
+//SERVIDOR
+app.listen (3000, () =>
+console.log ("Servidor corriendo")
+);
 
-app.set("views", path.join(__dirname, "views")); 
-app.set("view engine", "ejs") //configurar ejs como template engine
 
-const indexRouter = require("./routes/mainRoutes") 
+app.set("views", path.join(__dirname, "views"));
+
+//MOTOR DE VISTAS EJS
+app.set("view engine", "ejs")
+
+//RUTAS
+const indexRouter = require("./routes/mainRoutes")  
+const productsRouter = require("./routes/productsRoutes")
+const userRouter = require("./routes/userRoutes")
 
 app.use("/", indexRouter);
+app.use("/", productsRouter);
+app.use("/", userRouter)
 

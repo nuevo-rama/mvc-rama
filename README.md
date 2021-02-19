@@ -52,6 +52,37 @@
 
 ## Controladores
 
+- Atienden los distintos pedidos del cliente y generan comunicación entre las vistas y los modelos.
+- Es el intermediario entre las vistas y el modelo.
+- Provee mayor escalabilidad y control sobre el código.
+- Se debe implementar un controlador por cada recurso que tiene la aplicación
+
+1. Crear la carpeta controllers en la raíz del proyecto
+
+2. Dentro de la carpeta controllers crear el controlador
+
+- nombreDelRecursoController.js
+
+3. Definir una variable y asignarle un objeto literal
+- Ese objeto literal atenderá varios métodos
+- Por ejemplo pagina index, pagina detalle de producto y página edición de producto
+
+4. Vincular el controlador con las rutas
+
+## Routes
+
+- Contendrá todo el listado de las rutas válidas.
+
+1. Requerir al controlador
+2. Referenciar el método del controlador en la ruta
+
+
+
+
+
+
+
+
 
 
 
