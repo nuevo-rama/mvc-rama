@@ -6,7 +6,7 @@ const productosController = {
     },
 
     product: (req,res)=>{
-        res.render("./products/producto")
+        res.render("./products/product")
     },
     
     shoppingCart: (req,res)=>{

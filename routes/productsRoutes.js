@@ -6,7 +6,7 @@ const productosController = require("../controllers/productosController");
 const router = express.Router();
 
 router.get("/listadoProductos", productosController.index);
-router.get("/producto", productosController.product);
+router.get("/product", productosController.product);
 router.get("/ShoppingCart", productosController.shoppingCart);
 router.get("/productFormNew", productosController.productFormNew);
 router.get("/productFormEdit", productosController.productFormEdit);
